@@ -2,7 +2,7 @@
 
 **Student:** Zhiger Bazarov · **Course:** GenAI Basics · **Deadline:** 15 November 2026
 
-**Colab notebook:** [Capstone1_Bazarov_Zhiger](https://colab.research.google.com/drive/12pjOdZ0VXiSCxw2UIEj0LVDC_x_NXLxR?usp=sharing) · saved copy with outputs: [`Capstone1_Bazarov_Zhiger.ipynb`](Capstone1_Bazarov_Zhiger.ipynb)
+**Colab notebook:** [Capstone1_Bazarov_Zhiger](https://colab.research.google.com/drive/12pjOdZ0VXiSCxw2UIEj0LVDC_x_NXLxR?usp=sharing) · saved copy with outputs: [`Capstone1_Bazarov_Zhiger.ipynb`](/Capstone1_Jiger_Bazarov.ipynb)
 
 ## Pipeline
 My voice (English) → **Whisper-small** (speech to text) → **Gemini 2.5 Flash** (text to image prompt) → **SD-Turbo** (image)
