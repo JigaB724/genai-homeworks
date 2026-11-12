@@ -1,0 +1,18 @@
+{
+  "lesson": "GenAI Basics • L03",
+  "model": "gemini-3.5-flash-lite",
+  "track_a_structured_output": {
+    "category": "billing",
+    "urgent": true,
+    "amount_usd": 89.99,
+    "language": "en",
+    "suggested_action": "refund_duplicate"
+  },
+  "track_b_task": "Extract the root cause, the 3 mitigation steps in order and the key lessons as short bullet points, then propose 3 video titles under 60 characters. Use only facts stated in the transcript.",
+  "track_b_output": "**Root Cause**\n* An unindexed query introduced in release v2.14 performed a full table scan on the orders table during peak traffic, saturating the PostgreSQL connection pool.\n\n**Mitigation Steps (in order)**\n1. Terminated stuck backend queries using `pg_terminate_backend`.\n2. Deployed an emergency hotfix adding the composite B-tree index on `user_id` and `created_at`.\n3. Increased connection pooler limits in PgBouncer from 50 to 150 dedicated server connections.\n\n**Key Lessons**\n* Enforce query performance linting in CI/CD.\n* Add automated alerts on connection pool utilization above 80%.\n* Require database review for all new query paths.\n\n**Proposed Video Titles**\n* PostgreSQL Outage Post-Mortem: Connection Pool Saturation (55 chars)\n* Fixing a 47-Minute Database Outage: Post-Mortem Breakdown (55 chars)\n* SRE Post-Mortem: Unindexed Queries & Connection Spikes (54 chars)",
+  "track_b_tokens": {
+    "input": 417,
+    "output": 228,
+    "thinking": 0
+  }
+}
